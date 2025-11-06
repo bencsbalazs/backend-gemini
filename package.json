@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "Balázs Bencs",
   "type": "commonjs",
-  "main": "lib/geminiAPI.ts",
+  "main": "lib/geminiAPI.js",
   "scripts": {
     "build": "tsc",
     "deploy": "npm run build"
