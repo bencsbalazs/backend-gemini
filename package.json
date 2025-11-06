@@ -1,0 +1,23 @@
+{
+  "name": "geminiapi",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/bencsbalazs/backend-gemini#readme",
+  "bugs": {
+    "url": "https://github.com/bencsbalazs/backend-gemini/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencsbalazs/backend-gemini.git"
+  },
+  "license": "ISC",
+  "author": "Balázs Bencs",
+  "type": "commonjs",
+  "main": "geminiAPI.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.0"
+  }
+}
