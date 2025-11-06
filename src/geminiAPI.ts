@@ -1,7 +1,8 @@
 import { GoogleGenAI } from '@google/genai';
 
-// The authentication should be automatic if it runs on Google Cloud
-const ai = new GoogleGenAI({}); 
+const apiKey = process.env.GEMINI_API_KEY; 
+
+const ai = new GoogleGenAI(apiKey ? { apiKey } : {});
 
 const instructionsForGemini = `
 You are now a helpful agent, who tells the user about Balázs Bencs.
