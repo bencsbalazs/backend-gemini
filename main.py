@@ -23,7 +23,9 @@ except KeyError:
     raise
 
 # Comma-separated list of allowed origins
-ALLOWED_ORIGINS_STR = os.environ.get("ALLOWED_ORIGINS", "https://bencsbalazs.github.io")
+ALLOWED_ORIGINS_STR = os.environ.get(
+    "ALLOWED_ORIGINS", "https://portfolio-page-477315.web.app,https://bencsbalazs.github.io,https://bencsbalazs.com"
+)
 ALLOWED_ORIGINS = [origin.strip() for origin in ALLOWED_ORIGINS_STR.split(",")]
 
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
